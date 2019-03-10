@@ -13,12 +13,13 @@ export const getCurrentProfile = () => dispatch => {
         payload: res.data
       })
     )
-    .catch(err =>
+    .catch(err => {
+      console.log(err.response);
       dispatch({
         type: GET_PROFILE,
         payload: {}
-      })
-    );
+      });
+    });
 };
 
 // Profile loading
