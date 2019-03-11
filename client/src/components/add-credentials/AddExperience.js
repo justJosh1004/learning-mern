@@ -28,7 +28,7 @@ class AddExperience extends Component {
   };
 
   onSubmit = e => {
-    e.prevetnDefault();
+    e.preventDefault();
 
     const expData = {
       company: this.state.company,
