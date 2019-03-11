@@ -1,3 +1,4 @@
+// Can you lodash instaed
 const isEmpty = value =>
   value === undefined ||
   value === null ||
