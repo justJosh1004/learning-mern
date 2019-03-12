@@ -7,7 +7,7 @@ class ProfileItem extends Component {
   render() {
     const { profile } = this.props;
     return (
-      <div className="card car-body bg-light mb-3">
+      <div className="card card-body bg-light mb-3">
         <div className="row">
           <div className="col-2">
             <img src={profile.user.avatar} alt="" className="rounded-circle" />
@@ -30,7 +30,7 @@ class ProfileItem extends Component {
             </Link>
           </div>
           <div className="col-md-4 d-none d-md-block">
-            <h4>SKille Set</h4>
+            <h4>Skills Set</h4>
             <ul className="list-group">
               {profile.skills.slice(0, 4).map((skill, index) => (
                 <li key={index} className="list-group-item">

@@ -30,16 +30,17 @@ class AddEducation extends Component {
   onSubmit = e => {
     e.preventDefault();
 
-    const expData = {
-      company: this.state.company,
-      title: this.state.title,
-      location: this.state.location,
+    const eduData = {
+      school: this.state.school,
+      degree: this.state.degree,
+      fieldofstudy: this.state.fieldofstudy,
       from: this.state.from,
       to: this.state.to,
+      current: this.state.current,
       description: this.state.description
     };
 
-    this.props.addExperience(expData, this.props.history);
+    this.props.addEducation(eduData, this.props.history);
   };
 
   onChange = e => {
@@ -102,6 +103,7 @@ class AddEducation extends Component {
                 <h6>To Date</h6>
                 <TextFieldGroup
                   name="to"
+                  type="date"
                   value={this.state.to}
                   onChange={this.onChange}
                   error={errors.to}
