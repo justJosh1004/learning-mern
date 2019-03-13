@@ -10,7 +10,7 @@ import {
 } from './types';
 
 // Add Post
-export const addPosts = postData => dispatch => {
+export const addPost = postData => dispatch => {
   axios.post('/api/posts', postData).then(res =>
     dispatch({
       type: ADD_POST,
